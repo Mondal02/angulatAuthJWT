@@ -1,0 +1,21 @@
+<!-- <p>login works!</p> -->
+
+<div class="container-fluid">
+  <form>
+    <div class="mb-3">
+      <label for="txtusername" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="txtusername" aria-describedby="emailHelp"
+        [(ngModel)]="loginData.username" name="username">
+      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+      <label for="txtpassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="txtpassword" [(ngModel)]="loginData.password" name="password">
+    </div>
+    <!-- <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" (click)="userlogin()" class="btn btn-primary">Log In</button>
+  </form>
+</div>
