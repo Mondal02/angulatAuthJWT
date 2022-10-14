@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   userlogin() {
-    // console.log(this.loginData);
+    console.log(this.loginData);
     this.authService.userLogIn(this.loginData);
     this.route.navigate(['./dashboard'])
   }
